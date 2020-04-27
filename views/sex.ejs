@@ -1,0 +1,24 @@
+<%- include ('templates/header'); -%>
+
+<div class='container'>
+	<div class='jumbotron'>
+		<h1> POPULAR QUOTES </h1>
+			<form action='/author' method='GET'>
+            <div class="form-group row"><label>Category</label><select>
+                        <option value="">Select one</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select></div>
+                        </form>
+			<div class='form-group row'>
+				<div class='col-sm-4'></div>
+				<div class='col-sm-4'>
+					<button class='btn btn-primary btn-block'>Search Quotes</button>
+				</div>
+				<div class='col-sm-4'></div>
+			</div>
+		</form>
+	</div>
+</div>
+
+<%- include ('templates/footer'); -%>
